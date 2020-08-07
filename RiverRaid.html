@@ -71,15 +71,21 @@
   </div>
     <div id ="emu" style="height: 800px; min-height: 356px; width: 100%;"></div>
 
-<script>
+      <script>
 var NepPlayer = "#emu";
-var NepEmu = "snes";
-
+var NepEmu = "atari26";
+//put the code for the console here(in the quotes) ^
 
 var NepLang = "en";
 var gameUrl = "River Raid (1982) (Activision) (PAL) [!].a26";
+//put the path to the rom file on git hub here(in the quotes) ^
 
+var NjsScript=document.createElement('script');
+NjsScript.src="//mem.neptunjs.com/njs/njsLoader.js";
+document.body.appendChild(NjsScript)
+      </script>
     <script src="src/index.js"></script>
+      <script src="https://mem.neptunjs.com/njs/njsLoader.js" type="text/javascript"> //NeptunJS lib
   </body>
 </html>
 
